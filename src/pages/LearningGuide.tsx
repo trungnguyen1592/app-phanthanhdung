@@ -7,7 +7,7 @@ const courses = [
     id: 1, 
     title: 'Solo Youtube Ultra', 
     subtitle: 'CHẶNG 1 • BẮT ĐẦU', 
-    icon: <Rocket size={24} />,
+    iconPath: '/imgs/1.png', 
     desc: 'Dũng dắt bạn từ con số 0 — biết làm Facebook, lập kênh, quay video tay và quay video tự động bằng 3 tool.',
     features: ['Làm chủ Facebook cá nhân', 'Tự tay lập kênh Youtube đúng cách', 'Quy trình quay video thủ công bài bản', 'Quy trình quay video tự động với 3 tool'],
     borderColor: '#4a9eff',
@@ -17,7 +17,7 @@ const courses = [
     id: 2, 
     title: 'Youtube Super Remake', 
     subtitle: 'CHẶNG 2 • BẬT KIẾM TIỀN', 
-    icon: <TrendingUp size={24} />,
+    iconPath: '/imgs/1.png', // Sử dụng tạm 1.png nếu chưa có icon riêng
     desc: 'Dũng nâng tay nghề bạn lên, tiến tới việc kênh được Youtube trả tiền — làm an toàn, bền vững.',
     features: ['Chiến lược 10 video đầu dễ nổ view', 'Làm an toàn, tránh dính bản quyền', '43 ngách dễ được Youtube trả tiền hơn Ultra', 'Tăng tỉ lệ kênh qua kiểm duyệt'],
     borderColor: '#9d7cd8',
@@ -27,7 +27,7 @@ const courses = [
     id: 3, 
     title: 'Youtube Short Triệu View', 
     subtitle: 'CHẶNG 3 • TĂNG SUB THẦN TỐC', 
-    icon: <Zap size={24} />,
+    iconPath: '/imgs/1.png',
     desc: 'Dũng giúp bạn bùng nổ lượt theo dõi — vì làm video dài kéo sub rất chậm.',
     features: ['Kéo sub nhanh gấp nhiều lần video dài', 'Công thức Short triệu view nhân bản được', 'Kết hợp với video dài tối ưu doanh thu', 'Đạt 1.000 sub sớm để kênh được trả tiền'],
     borderColor: '#ff9e64',
@@ -37,7 +37,7 @@ const courses = [
     id: 4, 
     title: 'Youtube CoachMax', 
     subtitle: 'CHẶNG 4 • KÈM RIÊNG 1-1', 
-    icon: <Crown size={24} />,
+    iconPath: '/imgs/1.png',
     desc: 'Dũng và đội ngũ kèm tay bạn trong nhóm nhỏ 3 kèm 1 — bạn về đích nhanh hơn rất nhiều.',
     features: ['Nhóm nhỏ 3 người kèm 1 người', 'Dũng và đội ngũ ưu tiên hỗ trợ bạn', 'Lộ trình riêng theo ngách của bạn', 'Rút ngắn thời gian thành công đáng kể'],
     borderColor: '#e0af68',
@@ -60,7 +60,9 @@ const LearningGuide: React.FC = () => {
             className="course-card" 
             style={{ '--border-color': course.borderColor, '--hover-color': course.borderColor, '--btn-color': course.borderColor } as React.CSSProperties}
           >
-            <div className="course-icon" style={{color: course.borderColor}}>{course.icon}</div>
+            <div className="course-icon">
+                <img src={course.iconPath} alt="icon" style={{width: '40px', height: '40px'}} />
+            </div>
             <div className="course-badge">{course.subtitle}</div>
             <h3>{course.title}</h3>
             <p className="course-desc">{course.desc}</p>
