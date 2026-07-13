@@ -46,7 +46,7 @@
 .layout-wrapper {
   display: flex;
   min-height: 100vh;
-  background-color: #000000;
+  background-color: transparent;
   color: #ffffff;
   position: relative;
   z-index: 1;
