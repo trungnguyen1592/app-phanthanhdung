@@ -1,21 +1,23 @@
+import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import LearningGuide from './pages/LearningGuide';
-import { LayoutDashboard, BookOpen, Video, Settings, LogOut, Wrench } from 'lucide-react';
+import { LayoutDashboard, BookOpen, Video, Settings, LogOut, Wrench, Menu, X } from 'lucide-react';
 import './styles/Home.css';
 import './styles/LearningGuide.css';
 
 function App() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
   return (
     <Router>
       <div className="layout-wrapper">
-        {/* Hiệu ứng tuyết rơi */}
-        <div className="snowflakes" aria-hidden="true">
-          {[...Array(20)].map((_, i) => <div key={i} className="snowflake"></div>)}
-        </div>
+        <button className="menu-toggle" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
+          {isSidebarOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
 
         {/* Sidebar */}
-        <aside className="sidebar">
+        <aside className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
           <div className="sidebar-logo">PHANTHANHDUNG</div>
           <nav className="sidebar-menu">
             <Link to="/learning" className="menu-item"><LayoutDashboard size={20} /> Hướng dẫn học</Link>
