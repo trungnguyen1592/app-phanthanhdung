@@ -115,7 +115,7 @@
 }
 
 .btn-view {
-  background: #FF0000;
+  background: var(--btn-color);
   color: white;
 }
 
