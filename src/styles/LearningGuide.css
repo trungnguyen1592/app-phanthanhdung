@@ -22,15 +22,15 @@
 
 .course-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(250px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(4, 325px);
+  gap: 10px;
   width: 100%;
-  justify-items: center;
+  justify-content: center;
 }
 
 .course-card {
   background: #050505;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 20px;
   border: 1px solid var(--border-color);
   display: flex;
@@ -38,8 +38,7 @@
   align-items: center;
   text-align: center;
   transition: all 0.3s ease;
-  width: 100%;
-  max-width: 325px;
+  width: 325px;
 }
 
 /* Hiệu ứng hover sử dụng biến CSS --hover-color từ React */
@@ -50,7 +49,7 @@
 }
 
 .course-icon {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   padding: 0.5rem;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 50%;
@@ -129,9 +128,9 @@
   filter: brightness(1.2);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .course-grid {
-    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 325px);
   }
 }
 
@@ -144,10 +143,13 @@
   }
   .course-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem; /* Tăng khoảng cách giữa các block trên mobile */
+    gap: 10px;
+    justify-items: center;
   }
   .course-card {
+    width: 100%;
+    max-width: 325px;
     padding: 1.2rem;
-    margin-bottom: 1rem; /* Thêm margin dưới cho block trên mobile */
+    margin-bottom: 1rem;
   }
 }
