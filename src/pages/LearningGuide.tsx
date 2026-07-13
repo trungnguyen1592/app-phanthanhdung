@@ -49,7 +49,7 @@ const LearningGuide: React.FC = () => {
   return (
     <div className="learning-guide-container">
       <header className="page-header">
-        <h1>Bản Đồ Thành Công Trên Youtube</h1>
+        <h1 className="gradient-text">Bản Đồ Thành Công Trên Youtube</h1>
         <p>Dũng vẽ sẵn — bạn chỉ việc đi theo</p>
       </header>
 
