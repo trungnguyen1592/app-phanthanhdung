@@ -22,7 +22,7 @@
 
 .course-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
   gap: 1.5rem;
   width: 100%;
   justify-items: center;
@@ -42,6 +42,7 @@
   max-width: 325px;
 }
 
+/* Hiệu ứng hover sử dụng biến CSS --hover-color từ React */
 .course-card:hover {
   transform: translateY(-5px);
   border-color: var(--hover-color);
@@ -49,7 +50,7 @@
 }
 
 .course-icon {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   padding: 0.5rem;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 50%;
@@ -97,7 +98,7 @@
 }
 
 .feature-list li svg {
-  color: var(--border-color);
+  color: #FF0000;
   flex-shrink: 0;
   margin-top: 2px;
 }
@@ -136,16 +137,17 @@
 
 @media (max-width: 768px) {
   .learning-guide-container {
-    padding: 1rem 0.2rem;
+    padding: 1rem 0.5rem;
   }
   .page-header h1 {
     font-size: 1.8rem;
   }
   .course-grid {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.5rem; /* Tăng khoảng cách giữa các block trên mobile */
   }
   .course-card {
     padding: 1.2rem;
+    margin-bottom: 1rem; /* Thêm margin dưới cho block trên mobile */
   }
 }
