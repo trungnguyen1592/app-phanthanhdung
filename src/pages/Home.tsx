@@ -1,8 +1,21 @@
 import React from 'react';
-import { ChevronRight, MessageCircle, Lock } from 'lucide-react';
+import { ChevronRight, MessageCircle } from 'lucide-react';
 import '../styles/Home.css';
 
 const Home: React.FC = () => {
+  const learningPoints = [
+    'Hướng dẫn cách training trợ lý ChatGPT',
+    'Cách set up lại kịch bản GPT cho từng ngách muốn đánh',
+    'Tặng thêm 30 ngày dùng cho 3 tool (tổng là 67 ngày)',
+    'Cách xây hệ thống kênh chuẩn chỉnh ngay từ đầu không bị quết chết mail, chết kênh',
+    'Cách tìm và thẩm định ngách để chọn mà đánh',
+    '15 lý do thành công và 5 lý do thất bại khi làm Youtube (siêu quan trọng)',
+    'Chiến lược nhanh tiến tới bật kiếm tiền',
+    'Cách kết nối GA khi kênh bật kiếm tiền',
+    'Cách tối ưu tiền kiếm được từ 1000 lượt xem (tăng RPM)',
+    'Cứu kênh mất view....'
+  ];
+
   return (
     <section className="hero-dashboard">
       <header className="main-header">
@@ -16,7 +29,9 @@ const Home: React.FC = () => {
           <MessageCircle size={24} color="#FFD700" />
           <h3>💬 Đôi lời tâm sự với học viên mới!</h3>
         </div>
-        <p>Chào bạn, mình là Dũng. Hãy dành 5 phút xem video này để nắm vững quy trình học tập hiệu quả nhất trên nền tảng của mình nhé. Chúc bạn thành công!</p>
+        <ul className="message-list">
+            {learningPoints.map((point, index) => <li key={index}>{point}</li>)}
+        </ul>
       </div>
 
       <div className="hero-card">
