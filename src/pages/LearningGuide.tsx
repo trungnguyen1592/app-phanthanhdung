@@ -46,19 +46,19 @@ const courses = [
 ];
 
 const lockedCourses = [
-    { id: 5, title: 'Master Youtube Ads' },
-    { id: 6, title: 'Livestream Pro' },
-    { id: 7, title: 'Edit Video Cao Cấp' },
-    { id: 8, title: 'Tư Duy Affiliate' },
-    { id: 9, title: 'Xây Dựng Thương Hiệu' },
-    { id: 10, title: 'Kỹ Năng Đàm Phán' },
-    { id: 11, title: 'Quản Lý Tài Chính' },
-    { id: 12, title: 'Xây Dựng Team' },
-    { id: 13, title: 'Tối Ưu Hóa Kênh' },
-    { id: 14, title: 'Content Viral' },
-    { id: 15, title: 'Copywriting' },
-    { id: 16, title: 'Thiết Kế Thumbnail' },
-    { id: 17, title: 'Đào Tạo Leader' },
+    { id: 5, title: 'Youtube CoachMax' },
+    { id: 6, title: 'Master Youtube Ads' },
+    { id: 7, title: 'Livestream Pro' },
+    { id: 8, title: 'Edit Video Cao Cấp' },
+    { id: 9, title: 'Tư Duy Affiliate' },
+    { id: 10, title: 'Xây Dựng Thương Hiệu' },
+    { id: 11, title: 'Kỹ Năng Đàm Phán' },
+    { id: 12, title: 'Quản Lý Tài Chính' },
+    { id: 13, title: 'Xây Dựng Team' },
+    { id: 14, title: 'Tối Ưu Hóa Kênh' },
+    { id: 15, title: 'Content Viral' },
+    { id: 16, title: 'Copywriting' },
+    { id: 17, title: 'Thiết Kế Thumbnail' },
 ]
 
 const LearningGuide: React.FC = () => {
