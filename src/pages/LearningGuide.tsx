@@ -73,7 +73,7 @@ const LearningGuide: React.FC = () => {
         {courses.map(course => (
           <div 
             key={course.id} 
-            className="course-card" 
+            className={`course-card ${course.id === 1 ? 'course-card-bg' : ''}`} 
             style={{ '--border-color': course.borderColor, '--hover-color': course.borderColor, '--btn-color': course.borderColor } as React.CSSProperties}
           >
             <div className="course-icon" style={{color: course.borderColor}}>
