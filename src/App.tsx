@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import LearningGuide from './pages/LearningGuide';
-import { LayoutDashboard, BookOpen, Video, Settings, LogOut, Wrench, Menu, X } from 'lucide-react';
+import { LayoutDashboard, BookOpen, Video, Settings, LogOut, Wrench, Menu, X, Users } from 'lucide-react';
 import './styles/Home.css';
 import './styles/LearningGuide.css';
 
