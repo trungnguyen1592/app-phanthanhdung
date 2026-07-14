@@ -48,17 +48,19 @@ const courses = [
 const lockedCourses = [
     { id: 5, title: 'Youtube CoachMax' },
     { id: 6, title: 'Master Youtube Ads' },
-    { id: 7, title: 'Livestream Pro' },
-    { id: 8, title: 'Edit Video Cao Cấp' },
-    { id: 9, title: 'Tư Duy Affiliate' },
-    { id: 10, title: 'Xây Dựng Thương Hiệu' },
-    { id: 11, title: 'Kỹ Năng Đàm Phán' },
-    { id: 12, title: 'Quản Lý Tài Chính' },
-    { id: 13, title: 'Xây Dựng Team' },
-    { id: 14, title: 'Tối Ưu Hóa Kênh' },
-    { id: 15, title: 'Content Viral' },
-    { id: 16, title: 'Copywriting' },
-    { id: 17, title: 'Thiết Kế Thumbnail' },
+    { id: 7, title: 'Quảng Cáo Facebook Đơn Giản', desc: 'Trạm bơm traffic căn bản. Lên camp thực chiến, tránh khoá tài khoản, kéo khách về inbox.', price: '999.000 VNĐ' },
+    { id: 8, title: 'Livestream Pro' },
+    { id: 9, title: 'Edit Video Cao Cấp' },
+    { id: 10, title: 'Tư Duy Affiliate' },
+    { id: 11, title: 'Xây Dựng Thương Hiệu' },
+    { id: 12, title: 'Kỹ Năng Đàm Phán' },
+    { id: 13, title: 'Quản Lý Tài Chính' },
+    { id: 14, title: 'Xây Dựng Team' },
+    { id: 15, title: 'Tối Ưu Hóa Kênh' },
+    { id: 16, title: 'Content Viral' },
+    { id: 17, title: 'Copywriting' },
+    { id: 18, title: 'Thiết Kế Thumbnail' },
+    { id: 19, title: 'Đào Tạo Leader' },
 ]
 
 const LearningGuide: React.FC = () => {
@@ -124,6 +126,8 @@ const LearningGuide: React.FC = () => {
                 <div key={course.id} className="locked-card course-card-bg">
                     <Lock size={32} color="#fff" />
                     <h3>{course.title}</h3>
+                    {course.desc && <p className="locked-desc">{course.desc}</p>}
+                    {course.price && <p className="locked-price">{course.price}</p>}
                 </div>
             ))}
         </div>
