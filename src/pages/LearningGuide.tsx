@@ -118,28 +118,6 @@ const LearningGuide: React.FC = () => {
         ))}
       </div>
 
-      <div className="coach-vip-section">
-        <div className="coach-vip-card">
-            <h2>Gói Coach VIP "2 Kèm 1"</h2>
-            <p>Dũng & Huy đồng hành sống chết cùng bạn cho đến khi kiếm được GẤP ĐÔI học phí!</p>
-            <div className="price-tag">17.000.000 đ</div>
-            <div className="vip-actions">
-                <button className="btn-outline">Xem chi tiết</button>
-                <button className="btn-view">Mở khoá ngay</button>
-            </div>
-        </div>
-        
-        <div className="coach-vip-card" style={{marginTop: '2rem', border: '2px solid #FF5733'}}>
-            <h2 style={{color: '#FF5733'}}>Chuyển Giao Hệ Thống Bán Hàng Đám Đông</h2>
-            <p>Bê nguyên kịch bản tổ chức buổi bán hàng đám đông: kéo người, mồi cảm xúc, chốt đơn tại chỗ.</p>
-            <div className="price-tag">49.990.000 VNĐ</div>
-            <div className="vip-actions">
-                <button className="btn-outline">Xem chi tiết</button>
-                <button className="btn-view" style={{backgroundColor: '#FF5733'}}>Mở khoá ngay</button>
-            </div>
-        </div>
-      </div>
-
       <div className="locked-courses-section">
         <h2>Khóa học chưa mở khóa</h2>
         <div className="locked-grid">
