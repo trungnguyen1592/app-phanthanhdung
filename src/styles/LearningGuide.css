@@ -52,7 +52,8 @@
   margin-bottom: 0.5rem;
   padding: 0.5rem;
   background: rgba(255, 255, 255, 0.05);
-  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
 }
 
 .course-badge {
