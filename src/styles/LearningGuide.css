@@ -190,16 +190,10 @@
     margin-top: 2rem;
 }
 
-.locked-card {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.1);
-    padding: 1.5rem;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
+.special-locked-card {
+    border: none;
+    align-items: flex-start;
+    text-align: left;
 }
 
 .course-card-bg {
