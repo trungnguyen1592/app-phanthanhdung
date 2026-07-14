@@ -60,7 +60,10 @@ const LearningGuide: React.FC = () => {
             className="course-card" 
             style={{ '--border-color': course.borderColor, '--hover-color': course.borderColor, '--btn-color': course.borderColor } as React.CSSProperties}
           >
-            <div className="course-icon" style={{color: course.borderColor}}>{course.icon}</div>
+            <div className="course-icon" style={{color: course.borderColor}}>
+                {course.icon}
+                <span className="course-number">{course.id}</span>
+            </div>
             <div className="course-badge">{course.subtitle}</div>
             <h3>{course.title}</h3>
             <p className="course-desc">{course.desc}</p>
