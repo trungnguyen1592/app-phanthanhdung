@@ -21,7 +21,7 @@ const courses = [
     desc: 'Dũng nâng tay nghề bạn lên, tiến tới việc kênh được Youtube trả tiền — làm an toàn, bền vững.',
     features: ['Chiến lược 10 video đầu dễ nổ view', 'Làm an toàn, tránh dính bản quyền', '43 ngách dễ được Youtube trả tiền hơn Ultra', 'Tăng tỉ lệ kênh qua kiểm duyệt'],
     borderColor: '#9d7cd8',
-    price: '1.298K'
+    buttonText: 'Xem Super Remake — 1.298K'
   },
   { 
     id: 3, 
@@ -31,7 +31,7 @@ const courses = [
     desc: 'Dũng giúp bạn bùng nổ lượt theo dõi — vì làm video dài kéo sub rất chậm.',
     features: ['Kéo sub nhanh gấp nhiều lần video dài', 'Công thức Short triệu view nhân bản được', 'Kết hợp với video dài tối ưu doanh thu', 'Đạt 1.000 sub sớm để kênh được trả tiền'],
     borderColor: '#ff9e64',
-    price: '1.298K'
+    buttonText: 'Xem Short Triệu View — 1.298K'
   },
   { 
     id: 4, 
@@ -41,7 +41,7 @@ const courses = [
     desc: 'Dũng và đội ngũ kèm tay bạn trong nhóm nhỏ 3 kèm 1 — bạn về đích nhanh hơn rất nhiều.',
     features: ['Nhóm nhỏ 3 người kèm 1 người', 'Dũng và đội ngũ ưu tiên hỗ trợ bạn', 'Lộ trình riêng theo ngách của bạn', 'Rút ngắn thời gian thành công đáng kể'],
     borderColor: '#e0af68',
-    price: '15 Triệu'
+    buttonText: 'Xem CoachMax — 15 Triệu'
   },
 ];
 
@@ -73,7 +73,7 @@ const LearningGuide: React.FC = () => {
             {course.isCurrent ? (
               <button className="btn-current">Bạn đang ở đây</button>
             ) : (
-              <button className="btn-view">Xem {course.title.split(' ')[0]} — {course.price}</button>
+              <button className="btn-view">{course.buttonText}</button>
             )}
           </div>
         ))}
