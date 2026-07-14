@@ -105,6 +105,16 @@ const LearningGuide: React.FC = () => {
                 <button className="btn-view">Mở khoá ngay</button>
             </div>
         </div>
+        
+        <div className="coach-vip-card" style={{marginTop: '2rem', border: '2px solid #FF5733'}}>
+            <h2 style={{color: '#FF5733'}}>Chuyển Giao Hệ Thống Bán Hàng Đám Đông</h2>
+            <p>Bê nguyên kịch bản tổ chức buổi bán hàng đám đông: kéo người, mồi cảm xúc, chốt đơn tại chỗ.</p>
+            <div className="price-tag">49.990.000 VNĐ</div>
+            <div className="vip-actions">
+                <button className="btn-outline">Xem chi tiết</button>
+                <button className="btn-view" style={{backgroundColor: '#FF5733'}}>Mở khoá ngay</button>
+            </div>
+        </div>
       </div>
 
       <div className="locked-courses-section">
