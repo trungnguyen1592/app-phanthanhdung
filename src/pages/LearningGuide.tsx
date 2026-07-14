@@ -41,13 +41,26 @@ const courses = [
     desc: 'Dũng và đội ngũ kèm tay bạn trong nhóm nhỏ 3 kèm 1 — bạn về đích nhanh hơn rất nhiều.',
     features: ['Nhóm nhỏ 3 người kèm 1 người', 'Dũng và đội ngũ ưu tiên hỗ trợ bạn', 'Lộ trình riêng theo ngách của bạn', 'Rút ngắn thời gian thành công đáng kể'],
     borderColor: '#e0af68',
-    buttonText: 'Xem CoachMax — 15 Triệu'
+    buttonText: 'Xem CoachMax — 15 Triệu',
+    vipDetails: {
+        title: 'Gói Coach VIP "2 Kèm 1"',
+        desc: 'Dũng & Huy đồng hành sống chết cùng bạn cho đến khi kiếm được GẤP ĐÔI học phí!',
+        price: '17.000.000 đ'
+    }
   },
 ];
 
 const lockedCourses = [
     { id: 5, title: 'Youtube CoachMax' },
-    { id: 6, title: 'Master Youtube Ads' },
+    { 
+        id: 6, 
+        title: 'Master Youtube Ads',
+        vipDetails: {
+            title: 'Chuyển Giao Hệ Thống Bán Hàng Đám Đông',
+            desc: 'Bê nguyên kịch bản tổ chức buổi bán hàng đám đông: kéo người, mồi cảm xúc, chốt đơn tại chỗ.',
+            price: '49.990.000 VNĐ'
+        }
+    },
     { id: 7, title: 'Quảng Cáo Facebook Đơn Giản', desc: 'Trạm bơm traffic căn bản. Lên camp thực chiến, tránh khoá tài khoản, kéo khách về inbox.', price: '999.000 VNĐ' },
     { id: 8, title: 'Livestream Pro' },
     { id: 9, title: 'Edit Video Cao Cấp' },
@@ -85,8 +98,15 @@ const LearningGuide: React.FC = () => {
             <div className="course-badge">{course.subtitle}</div>
             <h3>{course.title}</h3>
             <p className="course-desc">{course.desc}</p>
+            {course.vipDetails && (
+                <div className="vip-box">
+                    <h4>{course.vipDetails.title}</h4>
+                    <p>{course.vipDetails.desc}</p>
+                    <div className="price-tag">{course.vipDetails.price}</div>
+                </div>
+            )}
             <ul className="feature-list">
-                {course.features.map((f, i) => <li key={i}><Check size={16} /> {f}</li>)}
+                {course.features && course.features.map((f, i) => <li key={i}><Check size={16} /> {f}</li>)}
             </ul>
             {course.isCurrent ? (
               <button className="btn-current">Bạn đang ở đây</button>
@@ -95,28 +115,6 @@ const LearningGuide: React.FC = () => {
             )}
           </div>
         ))}
-      </div>
-
-      <div className="coach-vip-section">
-        <div className="coach-vip-card">
-            <h2>Gói Coach VIP "2 Kèm 1"</h2>
-            <p>Dũng & Huy đồng hành sống chết cùng bạn cho đến khi kiếm được GẤP ĐÔI học phí!</p>
-            <div className="price-tag">17.000.000 đ</div>
-            <div className="vip-actions">
-                <button className="btn-outline">Xem chi tiết</button>
-                <button className="btn-view">Mở khoá ngay</button>
-            </div>
-        </div>
-        
-        <div className="coach-vip-card" style={{marginTop: '2rem', border: '2px solid #FF5733'}}>
-            <h2 style={{color: '#FF5733'}}>Chuyển Giao Hệ Thống Bán Hàng Đám Đông</h2>
-            <p>Bê nguyên kịch bản tổ chức buổi bán hàng đám đông: kéo người, mồi cảm xúc, chốt đơn tại chỗ.</p>
-            <div className="price-tag">49.990.000 VNĐ</div>
-            <div className="vip-actions">
-                <button className="btn-outline">Xem chi tiết</button>
-                <button className="btn-view" style={{backgroundColor: '#FF5733'}}>Mở khoá ngay</button>
-            </div>
-        </div>
       </div>
 
       <div className="locked-courses-section">
@@ -128,6 +126,13 @@ const LearningGuide: React.FC = () => {
                     <h3>{course.title}</h3>
                     {course.desc && <p className="locked-desc">{course.desc}</p>}
                     {course.price && <p className="locked-price">{course.price}</p>}
+                    {course.vipDetails && (
+                        <div className="vip-box">
+                            <h4>{course.vipDetails.title}</h4>
+                            <p>{course.vipDetails.desc}</p>
+                            <div className="price-tag">{course.vipDetails.price}</div>
+                        </div>
+                    )}
                 </div>
             ))}
         </div>
