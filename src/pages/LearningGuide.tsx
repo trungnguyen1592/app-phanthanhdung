@@ -73,7 +73,7 @@ const LearningGuide: React.FC = () => {
         {courses.map(course => (
           <div 
             key={course.id} 
-            className={`course-card ${course.id === 1 ? 'course-card-bg' : ''}`} 
+            className="course-card" 
             style={{ '--border-color': course.borderColor, '--hover-color': course.borderColor, '--btn-color': course.borderColor } as React.CSSProperties}
           >
             <div className="course-icon" style={{color: course.borderColor}}>
@@ -121,8 +121,8 @@ const LearningGuide: React.FC = () => {
         <h2>Khóa học chưa mở khóa</h2>
         <div className="locked-grid">
             {lockedCourses.map(course => (
-                <div key={course.id} className="locked-card">
-                    <Lock size={32} color="#555" />
+                <div key={course.id} className="locked-card course-card-bg">
+                    <Lock size={32} color="#fff" />
                     <h3>{course.title}</h3>
                 </div>
             ))}
