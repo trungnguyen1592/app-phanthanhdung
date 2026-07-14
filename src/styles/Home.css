@@ -170,12 +170,27 @@
   cursor: pointer;
 }
 
-.hero-stats-card {
-  background: rgba(255, 255, 255, 0.03);
-  padding: 2rem;
+.message-box {
+  background: rgba(255, 215, 0, 0.05);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  padding: 1.5rem;
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 2rem;
+  grid-column: span 2;
 }
+
+.message-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.message-box h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
 
 .stat-grid {
   display: flex;

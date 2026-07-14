@@ -1,5 +1,5 @@
 import React from 'react';
-import { Rocket, TrendingUp, Zap, Crown, Check } from 'lucide-react';
+import { Rocket, TrendingUp, Zap, Crown, Check, Lock } from 'lucide-react';
 import '../styles/LearningGuide.css';
 
 const courses = [
@@ -45,6 +45,11 @@ const courses = [
   },
 ];
 
+const lockedCourses = [
+    { id: 5, title: 'Master Youtube Ads' },
+    { id: 6, title: 'Livestream Pro' }
+]
+
 const LearningGuide: React.FC = () => {
   return (
     <div className="learning-guide-container">
@@ -77,6 +82,18 @@ const LearningGuide: React.FC = () => {
             )}
           </div>
         ))}
+      </div>
+
+      <div className="locked-courses-section">
+        <h2>Khóa học chưa mở khóa</h2>
+        <div className="locked-grid">
+            {lockedCourses.map(course => (
+                <div key={course.id} className="locked-card">
+                    <Lock size={32} color="#555" />
+                    <h3>{course.title}</h3>
+                </div>
+            ))}
+        </div>
       </div>
     </div>
   );
