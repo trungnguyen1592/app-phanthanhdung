@@ -46,42 +46,136 @@ const courses = [
 ];
 
 const lockedCourses = [
-    { 
-        id: 5, 
+    {
+        id: 5,
         title: 'Youtube CoachMax',
+        image: '/images/course-coachmax-DA83_mcX.png',
         vipDetails: {
             title: 'Gói Coach VIP "2 Kèm 1"',
             desc: 'Dũng & Huy đồng hành sống chết cùng bạn cho đến khi kiếm được GẤP ĐÔI học phí!',
             price: '17.000.000 VNĐ'
         }
     },
-    { 
-        id: 6, 
-        title: 'Master Youtube Ads',
+    {
+        id: 6,
+        title: 'Siêu Bán Hàng Bằng Tâm Lý',
+        image: '/images/tamly-ultra.jpg',
         vipDetails: {
             title: 'Siêu Bán Hàng Bằng Tâm Lý',
-            desc: 'Kỹ thuật bán hàng tâm lý cao cấp',
-            price: 'Liên hệ'
+            desc: 'Đọc vị tử huyệt cảm xúc khách hàng, bẻ gãy mọi sự kháng cự để chốt đơn nhẹ nhàng.',
+            price: '888.000 VNĐ'
         }
     },
-    { 
-        id: 7, 
-        title: 'Quảng Cáo Facebook Đơn Giản', 
-        desc: 'Trạm bơm traffic căn bản. Lên camp thực chiến, tránh khoá tài khoản, kéo khách về inbox.', 
-        price: '999.000 VNĐ' 
+    {
+        id: 7,
+        title: 'Quảng Cáo Facebook Đơn Giản',
+        image: '/images/qc-fb-don-gian.jpg',
+        vipDetails: {
+            title: 'Quảng Cáo Facebook Đơn Giản',
+            desc: 'Trạm bơm traffic căn bản. Lên camp thực chiến, tránh khoá tài khoản, kéo khách về inbox.',
+            price: '999.000 VNĐ'
+        }
     },
-    { id: 8, title: 'Livestream Pro' },
-    { id: 9, title: 'Edit Video Cao Cấp' },
-    { id: 10, title: 'Tư Duy Affiliate' },
-    { id: 11, title: 'Xây Dựng Thương Hiệu' },
-    { id: 12, title: 'Kỹ Năng Đàm Phán' },
-    { id: 13, title: 'Quản Lý Tài Chính' },
-    { id: 14, title: 'Xây Dựng Team' },
-    { id: 15, title: 'Tối Ưu Hóa Kênh' },
-    { id: 16, title: 'Content Viral' },
-    { id: 17, title: 'Copywriting' },
-    { id: 18, title: 'Thiết Kế Thumbnail' },
-    { id: 19, title: 'Đào Tạo Leader' },
+    {
+        id: 8,
+        title: 'Chốt Mess Ra Đơn Chuyển Đổi Cao Từ FB Ads',
+        image: '/images/chot-mess-fb-ads.jpg',
+        vipDetails: {
+            title: 'Chốt Mess Ra Đơn Chuyển Đổi Cao Từ FB Ads',
+            desc: 'Nâng cấp kịch bản chat đỉnh cao, khoá tâm lý và chốt hạ ngay trên tin nhắn.',
+            price: '8.990.000 VNĐ'
+        }
+    },
+    {
+        id: 9,
+        title: 'Truyền Nghề Quảng Cáo Facebook Mess (Tin Nhắn) Chuyên Sâu',
+        image: '/images/qc-facebook-chuyen-sau.jpg',
+        vipDetails: {
+            title: 'Truyền Nghề Quảng Cáo Facebook Mess (Tin Nhắn) Chuyên Sâu',
+            desc: 'Master Ads thực chiến. Vít ngân sách lớn, chi phí thấp, lợi nhuận cao.',
+            price: '29.990.000 VNĐ'
+        }
+    },
+    {
+        id: 10,
+        title: 'Hệ Thống Trang Bán Hàng Tự Động Từ FB Ads',
+        image: '/images/he-thong-trang-ban-hang-tu-dong.jpg',
+        vipDetails: {
+            title: 'Hệ Thống Trang Bán Hàng Tự Động Từ FB Ads',
+            desc: 'Bê nguyên cỗ máy Landing Page thôi miên: khách click QC ➔ tự đọc ➔ tự chuyển khoản.',
+            price: '49.990.000 VNĐ'
+        }
+    },
+    {
+        id: 11,
+        title: 'Siêu Diễn Đạt',
+        image: '/images/course-sieu-dien-dat-DmCqQPce.jpg',
+        vipDetails: {
+            title: 'Siêu Diễn Đạt',
+            desc: 'Làm chủ kỹ năng trình bày trước đám đông và người lạ, nâng tầm bản lĩnh lãnh đạo.',
+            price: '9.000.000 VNĐ'
+        }
+    },
+    {
+        id: 12,
+        title: 'Chuyển Giao Hệ Thống Bán Hàng Đám Đông',
+        image: '/images/he-thong-ban-hang-dam-dong.jpg',
+        vipDetails: {
+            title: 'Chuyển Giao Hệ Thống Bán Hàng Đám Đông',
+            desc: 'Bê nguyên kịch bản tổ chức buổi bán hàng đám đông: kéo người, mồi cảm xúc, chốt đơn tại chỗ.',
+            price: '49.990.000 VNĐ'
+        }
+    },
+    {
+        id: 13,
+        title: 'Hệ Thống QC FB & Bán Dịch Vụ Giá Cao',
+        image: '/images/he-thong-ban-hang-gia-cao.jpg',
+        vipDetails: {
+            title: 'Hệ Thống QC FB & Bán Dịch Vụ Giá Cao',
+            desc: 'Đóng gói dịch vụ, lọc tệp VIP từ FB Ads để chốt hợp đồng 50–100 triệu.',
+            price: '49.990.000 VNĐ'
+        }
+    },
+    {
+        id: 14,
+        title: 'COMBO 2-IN-1: QC FB Chuyên Sâu + Trang Bán Hàng Tự Động',
+        image: '/images/combo-2-in-1.jpg',
+        vipDetails: {
+            title: 'COMBO 2-IN-1: QC FB Chuyên Sâu + Trang Bán Hàng Tự Động',
+            desc: 'Giải pháp để khách tự đổ về web và tự mua hàng — không cần ngồi canh tin nhắn.',
+            price: '69.990.000 VNĐ'
+        }
+    },
+    {
+        id: 15,
+        title: 'COMBO 3-IN-1: Chốt Mess + QC FB Chuyên Sâu + Trang Bán Hàng Tự Động',
+        image: '/images/combo-3-in-1.jpg',
+        vipDetails: {
+            title: 'COMBO 3-IN-1: Chốt Mess + QC FB Chuyên Sâu + Trang Bán Hàng Tự Động',
+            desc: 'Cỗ máy in tiền đa kênh: chốt được cả khách inbox lẫn khách tự thanh toán trên web.',
+            price: '69.990.000 VNĐ'
+        }
+    },
+    {
+        id: 16,
+        title: 'COMBO 4-IN-1 TỐI THƯỢNG',
+        image: '/images/combo-4-in-1.jpg',
+        vipDetails: {
+            title: 'COMBO 4-IN-1 TỐI THƯỢNG',
+            desc: 'Thừa hưởng 100% công nghệ chạy ads, chốt đơn và đóng gói dịch vụ giá cao.',
+            price: '99.990.000 VNĐ'
+        }
+    },
+    {
+        id: 17,
+        title: 'Truyền Nghề Bán Khoá Học Kiếm Tiền Tỷ',
+        image: '/images/truyen-nghe-ban-khoa-hoc.jpg',
+        vipDetails: {
+            title: 'Truyền Nghề Bán Khoá Học Kiếm Tiền Tỷ',
+            desc: 'Đóng gói chuyên môn thành khoá học, xây phễu giáo dục tự động, tạo dòng tiền tỷ đồng.',
+            price: '99.990.000 VNĐ'
+        }
+    },
 ]
 
 const LearningGuide: React.FC = () => {
@@ -119,24 +213,44 @@ const LearningGuide: React.FC = () => {
       </div>
 
       <div className="locked-courses-section">
-        <h2>Khóa học chưa mở khóa</h2>
+        <h2><Lock size={24} color="#FFD700" /> Khóa học chưa mở khóa</h2>
         <div className="locked-grid">
             {lockedCourses.map(course => (
                 <div key={course.id} className={`locked-card course-card-bg ${course.id === 5 ? 'special-locked-card' : ''}`}>
-                    <div className="locked-header">
-                        <Lock size={32} color="#fff" />
-                        <h3>{course.title}</h3>
-                        {course.vipDetails?.price && <p className="locked-price">{course.vipDetails.price}</p>}
-                    </div>
+                    {course.image ? (
+                        <div className="locked-card-img-wrapper">
+                            <img src={course.image} alt="" className="locked-card-bg-img" />
+                            <div className="locked-header locked-header-overlay">
+                                <Lock size={32} color="#fff" />
+                                {course.vipDetails ? (
+                                    course.vipDetails.price && <p className="locked-price">{course.vipDetails.price}</p>
+                                ) : (
+                                    <>
+                                        <h3>{course.title}</h3>
+                                        {course.price && <p className="locked-price">{course.price}</p>}
+                                    </>
+                                )}
+                            </div>
+                        </div>
+                    ) : (
+                        <div className="locked-header">
+                            <Lock size={32} color="#fff" />
+                            <h3>{course.title}</h3>
+                            {course.vipDetails?.price && <p className="locked-price">{course.vipDetails.price}</p>}
+                        </div>
+                    )}
                     {course.desc && <p className="locked-desc">{course.desc}</p>}
                     {course.price && <p className="locked-price">{course.price}</p>}
                     {course.vipDetails && (
                         <div className="vip-box">
-                            <h4>{course.vipDetails.title}</h4>
-                            <p>{course.vipDetails.desc}</p>
-                            <div className="price-tag">{course.vipDetails.price}</div>
+                            <h3 className="vip-box-title">{course.title}</h3>
+                            <p className="vip-box-desc">{course.vipDetails.desc}</p>
                         </div>
                     )}
+                    <div className="locked-card-actions">
+                        <button className="btn-detail">Xem chi tiết</button>
+                        <button className="btn-unlock">Mở khoá ngay</button>
+                    </div>
                 </div>
             ))}
         </div>
