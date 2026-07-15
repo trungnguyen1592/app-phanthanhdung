@@ -2,6 +2,19 @@ import React from 'react';
 import { Rocket, TrendingUp, Zap, Crown, Check, Lock } from 'lucide-react';
 import '../styles/LearningGuide.css';
 
+interface LockedCourse {
+    id: number;
+    title: string;
+    image?: string;
+    desc?: string;
+    price?: string;
+    vipDetails?: {
+        title: string;
+        desc: string;
+        price: string;
+    };
+}
+
 const courses = [
   { 
     id: 1, 
@@ -45,7 +58,7 @@ const courses = [
   },
 ];
 
-const lockedCourses = [
+const lockedCourses: LockedCourse[] = [
     {
         id: 5,
         title: 'Youtube CoachMax',
