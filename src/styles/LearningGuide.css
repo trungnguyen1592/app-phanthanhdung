@@ -245,8 +245,9 @@
     margin-bottom: 0.5rem;
 }
 
-.special-locked-card .locked-header {
-    align-items: flex-start;
+.locked-desc {
+    font-size: 0.8rem;
+    color: #888;
 }
 
 .locked-price {

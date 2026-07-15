@@ -51,8 +51,7 @@ const lockedCourses = [
         title: 'Youtube CoachMax',
         vipDetails: {
             title: 'Gói Coach VIP "2 Kèm 1"',
-            desc: 'Dũng & Huy đồng hành sống chết cùng bạn cho đến khi kiếm được GẤP ĐÔI học phí!',
-            price: '17.000.000 đ'
+            desc: 'Dũng & Huy đồng hành sống chết cùng bạn cho đến khi kiếm được GẤP ĐÔI học phí!'
         }
     },
     { 
@@ -107,7 +106,7 @@ const LearningGuide: React.FC = () => {
             <h3>{course.title}</h3>
             <p className="course-desc">{course.desc}</p>
             <ul className="feature-list">
-                {course.features.map((f, i) => <li key={i}><Check size={16} /> {f}</li>)}
+                {course.features && course.features.map((f, i) => <li key={i}><Check size={16} /> {f}</li>)}
             </ul>
             {course.isCurrent ? (
               <button className="btn-current">Bạn đang ở đây</button>
@@ -125,10 +124,10 @@ const LearningGuide: React.FC = () => {
                 <div key={course.id} className={`locked-card course-card-bg ${course.id === 5 ? 'special-locked-card' : ''}`}>
                     <div className="locked-header">
                         <Lock size={32} color="#fff" />
-                        {course.id === 5 && course.vipDetails && <p className="locked-price">{course.vipDetails.price}</p>}
                         <h3>{course.title}</h3>
                     </div>
                     {course.desc && <p className="locked-desc">{course.desc}</p>}
+                    {course.price && <p className="locked-price">{course.price}</p>}
                     {course.vipDetails && (
                         <div className="vip-box">
                             <h4>{course.vipDetails.title}</h4>
