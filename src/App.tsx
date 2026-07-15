@@ -13,7 +13,7 @@ function App() {
     <Router>
       {/* Hiệu ứng tuyết rơi */}
       <div className="snowflakes" aria-hidden="true">
-        {[...Array(20)].map((_, i) => <div key={i} className="snowflake"></div>)}
+        {[...Array(40)].map((_, i) => <div key={i} className="snowflake"></div>)}
       </div>
 
       <div className="layout-wrapper">
