@@ -204,9 +204,8 @@
 
 .special-locked-card {
     border: 1px solid rgba(255,255,255,0.1);
-    align-items: flex-start;
-    text-align: left;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
 }
 
 .special-locked-card .vip-box {
