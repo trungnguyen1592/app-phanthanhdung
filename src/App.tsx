@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import LearningGuide from './pages/LearningGuide';
-import { LayoutDashboard, BookOpen, Video, Settings, LogOut, Wrench, Menu, X, Users } from 'lucide-react';
+import { LayoutDashboard, BookOpen, Video, Settings, LogOut, Wrench, Menu, X, Users, Rocket, Flame, Crown } from 'lucide-react';
 import './styles/Home.css';
 import './styles/LearningGuide.css';
 
@@ -27,12 +27,12 @@ function App() {
           <nav className="sidebar-menu">
             <Link to="/learning" className="menu-item"><LayoutDashboard size={20} /> Hướng Dẫn Học</Link>
             <Link to="#" className="menu-item"><BookOpen size={20} /> Khoá Học</Link>
-            <Link to="#" className="menu-item"><BookOpen size={20} /> Bản Đồ Thành Công</Link>
-            <Link to="#" className="menu-item"><Users size={20} /> Quyền Đồng Hành</Link>
-            <Link to="#" className="menu-item"><Video size={20} /> Short Triệu View</Link>
-            <Link to="#" className="menu-item"><Wrench size={20} /> CoachMax 2 Kèm 1</Link>
-            <Link to="#" className="menu-item"><Wrench size={20} /> Tool Vĩnh Viễn</Link>
-            <Link to="#" className="menu-item"><Settings size={20} /> Gia Hạn Tool</Link>
+            <Link to="#" className="menu-item"><BookOpen size={20} /> Bản Đồ Thành Công <span className="badge-new"><Rocket size={10} /> NEW</span></Link>
+            <Link to="#" className="menu-item"><Users size={20} /> Quyền Đồng Hành <span className="badge-new"><Rocket size={10} /> NEW</span></Link>
+            <Link to="#" className="menu-item"><Video size={20} /> Short Triệu View <span className="badge-new badge-short">SHORT</span></Link>
+            <Link to="#" className="menu-item menu-coachmax"><Crown size={20} color="#f97316" /> CoachMax 2 Kèm 1 <span className="badge-new badge-hot"><Flame size={10} /> HOT</span></Link>
+            <Link to="#" className="menu-item"><Wrench size={20} /> Tool Vĩnh Viễn <span className="badge-new badge-hot"><Flame size={10} /> HOT</span></Link>
+            <Link to="#" className="menu-item"><Settings size={20} /> Gia Hạn Tool <span className="badge-new">Gia hạn</span></Link>
             <Link to="#" className="menu-item"><BookOpen size={20} /> Tài Nguyên</Link>
             <Link to="#" className="menu-item"><Video size={20} /> Affiliate</Link>
             <Link to="#" className="menu-item"><Users size={20} /> Hồ Sơ</Link>
