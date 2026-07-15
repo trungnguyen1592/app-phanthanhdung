@@ -190,10 +190,23 @@
     margin-top: 2rem;
 }
 
+.locked-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 1rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+
 .special-locked-card {
     border: 1px solid rgba(255,255,255,0.1);
     align-items: flex-start;
     text-align: left;
+    align-items: flex-start;
 }
 
 .special-locked-card .vip-box {
@@ -224,9 +237,16 @@
   z-index: 1;
 }
 
-.locked-desc {
-    font-size: 0.8rem;
-    color: #888;
+.locked-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.special-locked-card .locked-header {
+    align-items: flex-start;
 }
 
 .locked-price {

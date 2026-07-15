@@ -123,11 +123,12 @@ const LearningGuide: React.FC = () => {
         <div className="locked-grid">
             {lockedCourses.map(course => (
                 <div key={course.id} className={`locked-card course-card-bg ${course.id === 5 ? 'special-locked-card' : ''}`}>
-                    <Lock size={32} color="#fff" />
-                    {course.id === 5 && course.vipDetails && <p className="locked-price">{course.vipDetails.price}</p>}
-                    <h3>{course.title}</h3>
+                    <div className="locked-header">
+                        <Lock size={32} color="#fff" />
+                        {course.id === 5 && course.vipDetails && <p className="locked-price">{course.vipDetails.price}</p>}
+                        <h3>{course.title}</h3>
+                    </div>
                     {course.desc && <p className="locked-desc">{course.desc}</p>}
-                    {course.id !== 5 && course.price && <p className="locked-price">{course.price}</p>}
                     {course.vipDetails && (
                         <div className="vip-box">
                             <h4>{course.vipDetails.title}</h4>
