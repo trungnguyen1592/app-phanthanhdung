@@ -97,12 +97,17 @@
 }
 
 .sidebar-logo {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 1.3rem;
-  color: #FF0000;
   margin-bottom: 2rem;
-  letter-spacing: 1px;
-  padding-left: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgb(245 158 11 / .5);
 }
 
 .sidebar-menu {
@@ -185,6 +190,29 @@
 .main-content {
   flex-grow: 1;
   padding: 1.5rem;
+  padding-top: 1rem;
+}
+
+.content-area {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.top-nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background: var(--bg-dark);
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.top-nav-bar h2 {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 600;
 }
 
 .main-header {
@@ -250,6 +278,27 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 1rem;
+}
+
+.message-text {
+  color: #ccc;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+.text-primary {
+  color: hsl(var(--primary));
+  font-weight: 700;
+}
+
+.text-foreground {
+  color: hsl(var(--foreground));
+  font-weight: 700;
+}
+
+.text-dung {
+  font-weight: 700;
+  color: hsl(var(--primary));
 }
 
 .message-list {

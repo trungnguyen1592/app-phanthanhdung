@@ -1,5 +1,5 @@
 import React from 'react';
-import { Rocket, TrendingUp, Zap, Crown, Check, Lock } from 'lucide-react';
+import { Rocket, TrendingUp, Zap, Crown, Check, Lock, MessageCircle } from 'lucide-react';
 import '../styles/LearningGuide.css';
 
 interface LockedCourse {
@@ -194,6 +194,23 @@ const lockedCourses: LockedCourse[] = [
 const LearningGuide: React.FC = () => {
   return (
     <div className="learning-guide-container">
+      {/* Đôi lời tâm sự */}
+      <div className="message-box">
+        <div className="message-header">
+          <MessageCircle size={24} color="#FFD700" />
+          <h3>Đôi lời tâm sự với học viên mới!</h3>
+        </div>
+        <p className="message-text">Chào bạn <span className="text-foreground">Anh Tú</span>. Trong khóa học Phan Thanh Dũng Ultra này, bạn sẽ được hỗ trợ bởi Dũng — người trực tiếp hướng dẫn bạn:</p>
+        <p className="message-text">Là 1 người mới, Dũng tin bạn đang rất háo hức xen lẫn hoài nghi liệu bản thân có làm được Youtube hay không?</p>
+        <p className="message-text">Dũng hiểu điều này, bởi Dũng đã từng là 1 người mới tinh và tràn đầy sự tự ti khi bước qua lĩnh vực mới này (dù trước kia Dũng là 1 Tác giả 6 cuốn sách và là Chuyên gia đào tạo kỹ năng).</p>
+        <p className="message-text">Lĩnh vực mới, tấm chiếu mới, không thoát khỏi sự sợ hãi và mù tịt ở những ngày ban đầu. Bản thân Dũng đã chi hơn <span className="text-foreground">120 triệu đồng</span> để học và loay hoay gần 2 năm mới bắt đầu làm Youtube. May mắn kênh đầu tiên nổ và kiếm được <span className="text-primary">9.000 đô</span>, và sau đó là tìm ra công thức chiến thắng để bật kiếm tiền tiếp hàng chục kênh sau đó.</p>
+        <p className="message-text">Lớp học Ultra này <span className="text-foreground">(799k)</span> là sự đóng gói lại bài bản của <span className="text-foreground">120 triệu</span> đi học và ngộ ra được quy trình — nên hãy trân trọng những trải nghiệm, tâm huyết, sự hướng dẫn mà Dũng chia sẻ.</p>
+        <p className="message-text">Trong hành trình này, bạn sẽ được <span className="text-dung">Dũng</span> phản hồi 1:1 qua Zalo để khi kẹt — thì có biết đường mà gỡ để tiếp tục tiến lên phía trước.</p>
+        <p className="message-text">Tuy nhiên do số lượng học viên khá đông, Dũng không thể phản hồi nhanh chóng từng người — nên khi nhắn tin hãy <span className="text-foreground">hỏi ngắn gọn, rõ ràng và cụ thể</span> để Dũng hỗ trợ bạn hiệu quả nhất.</p>
+        <p className="message-text"><span className="text-foreground">Còn dưới đây là sự hướng dẫn từng bước để bạn bắt đầu. 👇</span></p>
+        <p className="message-text"><em>💡 Có kết bạn thì hãy nhắn 1 tin với nội dung là "<span className="text-primary">Solo</span>", đó là ký hiệu để chúng ta biết nhau.</em></p>
+      </div>
+
       <header className="page-header">
         <h1 className="gradient-text">Bản Đồ Thành Công Trên Youtube</h1>
         <p>Dũng vẽ sẵn — bạn chỉ việc đi theo</p>

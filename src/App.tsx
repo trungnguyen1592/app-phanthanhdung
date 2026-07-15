@@ -23,7 +23,7 @@ function App() {
 
         {/* Sidebar */}
         <aside className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
-          <div className="sidebar-logo">PHANTHANHDUNG</div>
+          <div className="sidebar-logo"><img src="/images/dung-avatar.jpg" alt="Phan Thanh Dũng" className="logo-img" /></div>
           <nav className="sidebar-menu">
             <Link to="/learning" className="menu-item"><LayoutDashboard size={20} /> Hướng Dẫn Học</Link>
             <Link to="#" className="menu-item"><BookOpen size={20} /> Khoá Học</Link>
@@ -45,13 +45,19 @@ function App() {
           </div>
         </aside>
 
-        {/* Main Content */}
-        <main className="main-content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/learning" element={<LearningGuide />} />
-          </Routes>
-        </main>
+        {/* Content Area */}
+        <div className="content-area">
+          <div className="top-nav-bar">
+            <h2>Hướng dẫn học</h2>
+          </div>
+          {/* Main Content */}
+          <main className="main-content">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/learning" element={<LearningGuide />} />
+            </Routes>
+          </main>
+        </div>
       </div>
     </Router>
   );
