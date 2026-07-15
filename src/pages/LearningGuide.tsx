@@ -51,7 +51,8 @@ const lockedCourses = [
         title: 'Youtube CoachMax',
         vipDetails: {
             title: 'Gói Coach VIP "2 Kèm 1"',
-            desc: 'Dũng & Huy đồng hành sống chết cùng bạn cho đến khi kiếm được GẤP ĐÔI học phí!'
+            desc: 'Dũng & Huy đồng hành sống chết cùng bạn cho đến khi kiếm được GẤP ĐÔI học phí!',
+            price: '17.000.000 VNĐ'
         }
     },
     { 
@@ -125,6 +126,7 @@ const LearningGuide: React.FC = () => {
                     <div className="locked-header">
                         <Lock size={32} color="#fff" />
                         <h3>{course.title}</h3>
+                        {course.vipDetails?.price && <p className="locked-price">{course.vipDetails.price}</p>}
                     </div>
                     {course.desc && <p className="locked-desc">{course.desc}</p>}
                     {course.price && <p className="locked-price">{course.price}</p>}
