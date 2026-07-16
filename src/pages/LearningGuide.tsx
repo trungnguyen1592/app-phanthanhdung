@@ -54,7 +54,7 @@ const courses = [
     desc: 'Dũng và đội ngũ kèm tay bạn trong nhóm nhỏ 3 kèm 1 — bạn về đích nhanh hơn rất nhiều.',
     features: ['Nhóm nhỏ 3 người kèm 1 người', 'Dũng và đội ngũ ưu tiên hỗ trợ bạn', 'Lộ trình riêng theo ngách của bạn', 'Rút ngắn thời gian thành công đáng kể'],
     borderColor: '#e0af68',
-    buttonText: 'Xem CoachMax — 15 Triệu'
+    buttonText: 'Xem CoachMax — 17 Triệu'
   },
 ];
 
