@@ -335,19 +335,71 @@
 
 @media (max-width: 768px) {
   .learning-guide-container {
-    padding: 1rem 0.2rem;
+    padding: 0.5rem 0;
   }
+
   .page-header h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
+
+  .page-header p {
+    font-size: 0.85rem;
+  }
+
   .course-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+
   .course-card {
     width: 100%;
-    max-width: 325px;
-    padding: 1.2rem;
-    margin-bottom: 1rem;
+    max-width: 100%;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .locked-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .locked-card {
+    width: 100%;
+  }
+
+  .locked-card-bg-img {
+    height: 120px;
+  }
+
+  .locked-header-overlay {
+    padding: 0.5rem;
+  }
+
+  .locked-header-overlay h3 {
+    font-size: 0.9rem;
+  }
+
+  .locked-header h3 {
+    font-size: 0.9rem;
+  }
+
+  .vip-box-title {
+    font-size: 0.85rem;
+  }
+
+  .vip-box-desc {
+    font-size: 13px;
+  }
+
+  .btn-detail,
+  .btn-unlock {
+    font-size: 14px;
+    padding: 12px 0;
+  }
+
+  .message-box {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
