@@ -242,7 +242,7 @@ const LearningGuide: React.FC = () => {
         ))}
       </div>
 
-      <div className="locked-courses-section">
+      <div className="locked-courses-section" style={{ display: 'none' }}>
         <h2><Lock size={24} color="#FFD700" /> Khóa học chưa mở khóa</h2>
         <div className="locked-grid">
             {lockedCourses.map(course => (
