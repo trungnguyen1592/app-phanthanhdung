@@ -1,16 +1,24 @@
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import LearningGuide from './pages/LearningGuide';
+import Landing from './pages/Landing';
 import { LayoutDashboard, BookOpen, Video, Settings, LogOut, Wrench, Menu, X, Users, Rocket, Flame, Crown } from 'lucide-react';
 import './styles/Home.css';
 import './styles/LearningGuide.css';
+import './styles/Landing.css';
 
-function App() {
+function AppLayout({ children }: { children: React.ReactNode }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const location = useLocation();
+  const isLanding = location.pathname === '/' || location.pathname === '/landing';
+
+  if (isLanding) {
+    return <>{children}</>;
+  }
 
   return (
-    <Router>
+    <>
       {/* Hiệu ứng tuyết rơi */}
       <div className="snowflakes" aria-hidden="true">
         {[...Array(40)].map((_, i) => <div key={i} className="snowflake"></div>)}
@@ -50,15 +58,26 @@ function App() {
           <div className="top-nav-bar">
             <h2>Hướng dẫn học</h2>
           </div>
-          {/* Main Content */}
           <main className="main-content">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/learning" element={<LearningGuide />} />
-            </Routes>
+            {children}
           </main>
         </div>
       </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppLayout>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/landing" element={<Landing />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/learning" element={<LearningGuide />} />
+        </Routes>
+      </AppLayout>
     </Router>
   );
 }
