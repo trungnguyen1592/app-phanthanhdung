@@ -107,33 +107,33 @@ const Landing: React.FC = () => {
   const roadmapSteps = [
     {
       icon: <Rocket size={28} color="rgb(0, 190, 214)" />,
-      title: 'YouTube Basics',
+      title: 'Cơ bản YouTube',
       desc: 'Tạo kênh, tối ưu hồ sơ, hiểu thuật toán và cách YouTube hoạt động.',
     },
     {
       icon: <Monitor size={28} color="rgb(0, 190, 214)" />,
-      title: 'Content Strategy',
+      title: 'Chiến lược nội dung',
       desc: 'Nghiên cứu ngách, lên kế hoạch nội dung và xây dựng lịch đăng tải.',
     },
     {
       icon: <Video size={28} color="rgb(0, 190, 214)" />,
-      title: 'Video Production',
+      title: 'Sản xuất video',
       desc: 'Quay dựng chuyên nghiệp, edit video giữ chân người xem đến cuối.',
     },
     {
       icon: <Wallet size={28} color="rgb(0, 190, 214)" />,
-      title: 'Monetization',
-      desc: 'Bật kiếm tiền, tối ưu RPM, đa dạng hóa nguồn thu nhập từ kênh.',
+      title: 'Tối ưu kênh',
+      desc: 'Các chiến lược tối ưu kênh và đảm bảo an toàn cho kênh YouTube của bạn.',
     },
   ];
 
   const achievements = [
-    { icon: <CheckCircle size={24} color="rgb(0, 190, 214)" />, title: 'Xây kênh chuyên nghiệp', desc: 'Tạo và tối ưu kênh YouTube chuẩn ngay từ đầu.' },
-    { icon: <Users size={24} color="rgb(0, 190, 214)" />, title: 'Đạt 1000 người đăng ký', desc: 'Chiến lược tăng sub tự nhiên, bền vững.' },
-    { icon: <TrendingUp size={24} color="rgb(0, 190, 214)" />, title: 'Tăng lượt xem đột phá', desc: 'SEO và thumbnail giúp video lên top tìm kiếm.' },
-    { icon: <DollarSign size={24} color="rgb(0, 190, 214)" />, title: 'Kiếm tiền từ kênh', desc: 'Bật kiếm tiền, tối ưu RPM, đa dạng thu nhập.' },
-    { icon: <Briefcase size={24} color="rgb(0, 190, 214)" />, title: 'Xây thương hiệu cá nhân', desc: 'Định vị bản thân thành chuyên gia trong ngách.' },
-    { icon: <Bot size={24} color="rgb(0, 190, 214)" />, title: 'Dùng AI tạo nội dung', desc: 'Tận dụng ChatGPT và AI tools để sản xuất video nhanh hơn.' },
+    { icon: <CheckCircle size={24} color="#fff" />, title: 'Xây kênh chuyên nghiệp', desc: 'Tạo và tối ưu kênh YouTube chuẩn ngay từ đầu.' },
+    { icon: <Users size={24} color="#fff" />, title: 'Đạt 1000 người đăng ký', desc: 'Chiến lược tăng sub tự nhiên, bền vững.' },
+    { icon: <TrendingUp size={24} color="#fff" />, title: 'Tăng lượt xem đột phá', desc: 'SEO và thumbnail giúp video lên top tìm kiếm.' },
+    { icon: <DollarSign size={24} color="#fff" />, title: 'Kiếm tiền từ kênh', desc: 'Bật kiếm tiền, tối ưu RPM, đa dạng thu nhập.' },
+    { icon: <Briefcase size={24} color="#fff" />, title: 'Xây thương hiệu cá nhân', desc: 'Định vị bản thân thành chuyên gia trong ngách.' },
+    { icon: <Bot size={24} color="#fff" />, title: 'Dùng AI tạo nội dung', desc: 'Tận dụng ChatGPT và AI tools để sản xuất video nhanh hơn.' },
   ];
 
   const testimonials = [
@@ -193,7 +193,6 @@ const Landing: React.FC = () => {
     { q: 'Học trong bao lâu?', a: 'Khóa học được thiết kế trong 8 tuần, mỗi tuần 3-4 buổi. Bạn có thể học nhanh hoặc chậm tùy theo lịch của mình.' },
     { q: 'Có cần kênh YouTube sẵn không?', a: 'Không cần. Chúng tôi sẽ hướng dẫn bạn tạo kênh mới chuẩn SEO ngay từ bài đầu tiên.' },
     { q: 'Hỗ trợ ra sao sau khóa học?', a: 'Bạn được hỗ trợ 1:1 qua Zalo trọn đời, tham gia cộng đồng riêng và được cập nhật nội dung mới miễn phí.' },
-    { q: 'Nếu không hài lòng thì sao?', a: 'Chúng tôi có chính sách hoàn tiền 100% trong 7 ngày đầu tiên. Bạn có thể học thử hoàn toàn không rủi ro.' },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -394,7 +393,7 @@ const Landing: React.FC = () => {
           <div className="lp-stats-row">
             <div className="lp-stat-card">
               <div className="lp-stat-icon-box">
-                <Users size={22} color="#FF8800" />
+                <Users size={22} color="#EF4444" />
               </div>
               <div className="lp-stat-number">500<span className="lp-stat-plus">+</span></div>
               <div className="lp-stat-title">Học viên</div>
@@ -403,7 +402,7 @@ const Landing: React.FC = () => {
 
             <div className="lp-stat-card">
               <div className="lp-stat-icon-box">
-                <PlayCircle size={22} color="#FF8800" />
+                <PlayCircle size={22} color="#EF4444" />
               </div>
               <div className="lp-stat-number">12</div>
               <div className="lp-stat-title">Khóa học</div>
@@ -412,7 +411,7 @@ const Landing: React.FC = () => {
 
             <div className="lp-stat-card">
               <div className="lp-stat-icon-box">
-                <Star size={22} color="#FF8800" />
+                <Star size={22} color="#EF4444" />
               </div>
               <div className="lp-stat-number">4.9<span className="lp-stat-plus">/5</span></div>
               <div className="lp-stat-title">Đánh giá</div>
@@ -421,7 +420,7 @@ const Landing: React.FC = () => {
 
             <div className="lp-stat-card">
               <div className="lp-stat-icon-box">
-                <Trophy size={22} color="#FF8800" />
+                <Trophy size={22} color="#EF4444" />
               </div>
               <div className="lp-stat-number">94<span className="lp-stat-plus">%</span></div>
               <div className="lp-stat-title">Tỷ lệ thành công</div>
@@ -562,14 +561,16 @@ const Landing: React.FC = () => {
                   <h4 className="lp-timeline-title">{step.title}</h4>
                   <p className="lp-timeline-desc">{step.desc}</p>
                 </div>
-                {/* Connector */}
-                {i < roadmapSteps.length - 1 && (
+                {/* Connector or spacer for equal width */}
+                {i < roadmapSteps.length - 1 ? (
                   <div className="lp-timeline-connector">
                     <div className="lp-timeline-line" />
                     <div className="lp-timeline-arrow">
                       <ArrowRight size={16} />
                     </div>
                   </div>
+                ) : (
+                  <div className="lp-timeline-spacer" />
                 )}
               </div>
             ))}
