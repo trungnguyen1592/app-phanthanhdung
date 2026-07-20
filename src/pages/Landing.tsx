@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Play, ArrowRight, Users, DollarSign, TrendingUp, Star, PlayCircle, Trophy, Youtube, Facebook, Instagram, Globe, EyeOff, Search, Scissors, UserX, Ban, MapPin, Clock, BookOpen, BarChart3, Rocket, Monitor, Video, Wallet, CheckCircle, Briefcase, Bot, ChevronLeft, ChevronRight, Quote, Zap, Shield, Plus, Minus, Menu, X } from 'lucide-react';
+import { Play, ArrowRight, Users, DollarSign, TrendingUp, Star, PlayCircle, Trophy, Youtube, Facebook, Instagram, Globe, EyeOff, Search, Scissors, UserX, Ban, MapPin, Clock, BookOpen, BarChart3, Rocket, Monitor, Video, Wallet, CheckCircle, Briefcase, Bot, ChevronLeft, ChevronRight, Quote, Zap, Plus, Minus, Menu, X } from 'lucide-react';
 import '../styles/Landing.css';
 
 const Landing: React.FC = () => {
