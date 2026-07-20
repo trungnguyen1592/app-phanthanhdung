@@ -394,7 +394,7 @@ const Landing: React.FC = () => {
           <div className="lp-stats-row">
             <div className="lp-stat-card">
               <div className="lp-stat-icon-box">
-                <Users size={22} color="rgb(0, 190, 214)" />
+                <Users size={22} color="#FF8800" />
               </div>
               <div className="lp-stat-number">500<span className="lp-stat-plus">+</span></div>
               <div className="lp-stat-title">Học viên</div>
@@ -403,7 +403,7 @@ const Landing: React.FC = () => {
 
             <div className="lp-stat-card">
               <div className="lp-stat-icon-box">
-                <PlayCircle size={22} color="rgb(0, 190, 214)" />
+                <PlayCircle size={22} color="#FF8800" />
               </div>
               <div className="lp-stat-number">12</div>
               <div className="lp-stat-title">Khóa học</div>
@@ -412,7 +412,7 @@ const Landing: React.FC = () => {
 
             <div className="lp-stat-card">
               <div className="lp-stat-icon-box">
-                <Star size={22} color="rgb(0, 190, 214)" />
+                <Star size={22} color="#FF8800" />
               </div>
               <div className="lp-stat-number">4.9<span className="lp-stat-plus">/5</span></div>
               <div className="lp-stat-title">Đánh giá</div>
@@ -421,7 +421,7 @@ const Landing: React.FC = () => {
 
             <div className="lp-stat-card">
               <div className="lp-stat-icon-box">
-                <Trophy size={22} color="rgb(0, 190, 214)" />
+                <Trophy size={22} color="#FF8800" />
               </div>
               <div className="lp-stat-number">94<span className="lp-stat-plus">%</span></div>
               <div className="lp-stat-title">Tỷ lệ thành công</div>
@@ -718,7 +718,7 @@ const Landing: React.FC = () => {
               </div>
 
               {/* Course name */}
-              <h3 className="lp-pricing-name">YouTube Master</h3>
+              <h3 className="lp-pricing-name">YouTube Ultra</h3>
               <p className="lp-pricing-desc">Khóa học YouTube toàn diện từ A-Z</p>
 
               {/* Price */}
@@ -728,7 +728,7 @@ const Landing: React.FC = () => {
               </div>
               <div className="lp-pricing-current">
                 <span className="lp-pricing-currency">VNĐ</span>
-                <span className="lp-pricing-amount">799.000</span>
+                <span className="lp-pricing-amount">999.000</span>
               </div>
 
               {/* Divider */}
@@ -751,10 +751,6 @@ const Landing: React.FC = () => {
                 Đăng ký ngay <ArrowRight size={20} />
               </a>
 
-              {/* Guarantee */}
-              <p className="lp-pricing-guarantee">
-                <Shield size={14} /> Bảo hành 7 ngày hoàn tiền 100%
-              </p>
             </div>
           </div>
         </div>
@@ -808,7 +804,7 @@ const Landing: React.FC = () => {
             Tham gia cùng hàng ngàn học viên đã thành công. Đừng để ước mơ của bạn chỉ là ước mơ.
           </p>
           <a href="#pricing" className="lp-btn-primary lp-btn-lg lp-cta-final-btn">
-            Đăng ký ngay — Chỉ 799K <ArrowRight size={20} />
+            Đăng ký ngay — Chỉ 999K <ArrowRight size={20} />
           </a>
           <p className="lp-body-sm lp-mt-2">Thanh toán an toàn • Truy cập ngay lập tức</p>
         </div>

@@ -801,20 +801,23 @@
   width: 52px;
   height: 52px;
   border-radius: var(--lp-radius-sm);
-  background: hsl(var(--primary) / 0.08);
+  background: linear-gradient(135deg, rgba(255, 68, 68, 0.12), rgba(255, 136, 0, 0.12));
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto var(--lp-space-2);
+  box-shadow: 0 0 12px rgba(255, 136, 0, 0.08);
 }
 
 .lp-stat-number {
   font-size: 2.8rem;
   font-weight: 900;
-  background: linear-gradient(180deg, #fff 30%, hsl(var(--primary)));
+  background: linear-gradient(135deg, #FF4444 0%, #FF8800 40%, #FFD700 70%, #FFAA00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-shadow: none;
+  filter: drop-shadow(0 0 8px rgba(255, 136, 0, 0.5)) drop-shadow(0 0 16px rgba(255, 68, 68, 0.25));
   line-height: 1.1;
   letter-spacing: -0.02em;
 }
@@ -822,20 +825,24 @@
 .lp-stat-plus {
   font-size: 1.4rem;
   font-weight: 600;
-  color: var(--lp-primary);
+  background: linear-gradient(135deg, #FF8800, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .lp-stat-title {
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #fff;
   margin-top: 4px;
   margin-bottom: 4px;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
 }
 
 .lp-stat-desc {
   font-size: 0.8rem;
-  color: var(--lp-text-gray);
+  color: #D4D4D8;
   line-height: 1.4;
 }
 
