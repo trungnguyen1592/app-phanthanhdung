@@ -422,7 +422,7 @@ const Landing: React.FC = () => {
               <div className="lp-stat-icon-box">
                 <Trophy size={22} color="#EF4444" />
               </div>
-              <div className="lp-stat-number">94<span className="lp-stat-plus">%</span></div>
+              <div className="lp-stat-number">50<span className="lp-stat-plus">%</span></div>
               <div className="lp-stat-title">Tỷ lệ thành công</div>
               <div className="lp-stat-desc">Học viên bật kiếm tiền sau 3 tháng</div>
             </div>
