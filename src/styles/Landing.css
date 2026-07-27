@@ -1281,7 +1281,7 @@
   width: 40px;
   height: 40px;
   border-radius: var(--lp-radius-md);
-  background: color-mix(in srgb, var(--border-color) 12%, transparent);
+  background: hsl(var(--primary) / 0.12);
   flex-shrink: 0;
 }
 
