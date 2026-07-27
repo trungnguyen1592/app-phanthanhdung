@@ -1378,10 +1378,7 @@
   .lp-roadmap-card-arrow {
     display: none;
   }
-}
 
-/* Responsive */
-@media (max-width: 1024px) {
   .lp-timeline {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
