@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Play, ArrowRight, Users, DollarSign, TrendingUp, Star, PlayCircle, Trophy, Youtube, Facebook, Instagram, Globe, EyeOff, Search, Scissors, UserX, Ban, MapPin, Clock, BookOpen, BarChart3, Rocket, Monitor, Video, Wallet, CheckCircle, Briefcase, Bot, ChevronLeft, ChevronRight, Quote, Zap, Plus, Minus, Menu, X } from 'lucide-react';
+import { Play, ArrowRight, Users, DollarSign, TrendingUp, Star, PlayCircle, Trophy, Youtube, Facebook, Instagram, Globe, EyeOff, Search, Scissors, UserX, Ban, MapPin, CheckCircle, Briefcase, Bot, ChevronLeft, ChevronRight, Quote, Zap, Crown, Plus, Minus, Menu, X, Rocket } from 'lucide-react';
 import '../styles/Landing.css';
 
 const Landing: React.FC = () => {
@@ -73,57 +73,43 @@ const Landing: React.FC = () => {
     },
   ];
 
-  const courses = [
-    {
-      title: 'YouTube Cơ Bản — Từ Con Số 0',
-      lessons: 24,
-      duration: '4 tuần',
-      level: 'Cơ bản',
-      gradient: 'linear-gradient(135deg, #1a1a2e, #16213e)',
-    },
-    {
-      title: 'SEO & Thuật Toán YouTube',
-      lessons: 18,
-      duration: '3 tuần',
-      level: 'Trung cấp',
-      gradient: 'linear-gradient(135deg, #1a0a0a, #3d0000)',
-    },
-    {
-      title: 'Short Video Triệu View',
-      lessons: 12,
-      duration: '2 tuần',
-      level: 'Cơ bản',
-      gradient: 'linear-gradient(135deg, #0a1a0a, #003d00)',
-    },
-    {
-      title: 'YouTube Master — Kiếm Tiền',
-      lessons: 32,
-      duration: '8 tuần',
-      level: 'Nâng cao',
-      gradient: 'linear-gradient(135deg, #1a0a2e, #2d0050)',
-    },
-  ];
-
   const roadmapSteps = [
     {
-      icon: <Rocket size={28} color="rgb(0, 190, 214)" />,
-      title: 'Cơ bản YouTube',
-      desc: 'Tạo kênh, tối ưu hồ sơ, hiểu thuật toán và cách YouTube hoạt động.',
+      icon: <Rocket size={28} />,
+      title: 'Solo Youtube Ultra',
+      subtitle: 'CHẶNG 1 • BẮT ĐẦU',
+      desc: 'Dũng dắt bạn từ con số 0 — biết làm Facebook, lập kênh, quay video tay và quay video tự động bằng 3 tool.',
+      features: ['Làm chủ Facebook cá nhân', 'Tự tay lập kênh Youtube đúng cách', 'Quy trình quay video thủ công bài bản', 'Quy trình quay video tự động với 3 tool'],
+      price: '799K',
+      borderColor: '#4a9eff',
+      isCurrent: true,
     },
     {
-      icon: <Monitor size={28} color="rgb(0, 190, 214)" />,
-      title: 'Chiến lược nội dung',
-      desc: 'Nghiên cứu ngách, lên kế hoạch nội dung và xây dựng lịch đăng tải.',
+      icon: <TrendingUp size={28} />,
+      title: 'Youtube Super Remake',
+      subtitle: 'CHẶNG 2 • BẬT KIẾM TIỀN',
+      desc: 'Dũng nâng tay nghề bạn lên, tiến tới việc kênh được Youtube trả tiền — làm an toàn, bền vững.',
+      features: ['Chiến lược 10 video đầu dễ nổ view', 'Làm an toàn, tránh dính bản quyền', '43 ngách dễ được Youtube trả tiền hơn Ultra', 'Tăng tỉ lệ kênh qua kiểm duyệt'],
+      price: '1.298K',
+      borderColor: '#9d7cd8',
     },
     {
-      icon: <Video size={28} color="rgb(0, 190, 214)" />,
-      title: 'Sản xuất video',
-      desc: 'Quay dựng chuyên nghiệp, edit video giữ chân người xem đến cuối.',
+      icon: <Zap size={28} />,
+      title: 'Youtube Short Triệu View',
+      subtitle: 'CHẶNG 3 • TĂNG SUB THẦN TỐC',
+      desc: 'Dũng giúp bạn bùng nổ lượt theo dõi — vì làm video dài kéo sub rất chậm.',
+      features: ['Kéo sub nhanh gấp nhiều lần video dài', 'Công thức Short triệu view nhân bản được', 'Kết hợp với video dài tối ưu doanh thu', 'Đạt 1.000 sub sớm để kênh được trả tiền'],
+      price: '1.298K',
+      borderColor: '#ff9e64',
     },
     {
-      icon: <Wallet size={28} color="rgb(0, 190, 214)" />,
-      title: 'Tối ưu kênh',
-      desc: 'Các chiến lược tối ưu kênh và đảm bảo an toàn cho kênh YouTube của bạn.',
+      icon: <Crown size={28} />,
+      title: 'Youtube CoachMax',
+      subtitle: 'CHẶNG 4 • KÈM RIÊNG 1-1',
+      desc: 'Dũng và đội ngũ kèm tay bạn trong nhóm nhỏ 3 kèm 1 — bạn về đích nhanh hơn rất nhiều.',
+      features: ['Nhóm nhỏ 3 người kèm 1 người', 'Dũng và đội ngũ ưu tiên hỗ trợ bạn', 'Lộ trình riêng theo ngách của bạn', 'Rút ngắn thời gian thành công đáng kể'],
+      price: '17 Triệu',
+      borderColor: '#e0af68',
     },
   ];
 
@@ -223,8 +209,7 @@ const Landing: React.FC = () => {
           </a>
           <div className={`lp-nav-links ${isNavOpen ? 'is-open' : ''}`}>
             <button className="lp-nav-link" onClick={() => scrollTo('social-proof')}>Kết quả</button>
-            <button className="lp-nav-link" onClick={() => scrollTo('courses')}>Khóa học</button>
-            <button className="lp-nav-link" onClick={() => scrollTo('roadmap')}>Lộ trình</button>
+            <button className="lp-nav-link" onClick={() => scrollTo('courses')}>Lộ trình</button>
             <button className="lp-nav-link" onClick={() => scrollTo('testimonials')}>Đánh giá</button>
             <button className="lp-nav-link" onClick={() => scrollTo('pricing')}>Giá</button>
             <button className="lp-nav-link" onClick={() => scrollTo('faq')}>FAQ</button>
@@ -488,89 +473,47 @@ const Landing: React.FC = () => {
       {/* ============================================
            Course Showcase
            ============================================ */}
-      <section className="lp-section lp-courses" id="courses">
-        <div className="lp-container lp-reveal">
-          <div className="lp-text-center lp-mb-6">
-            <p className="lp-caption">Khóa học tiêu biểu</p>
-            <h2 className="lp-heading-lg lp-mt-2">
-              Lộ trình từng bước đến <span className="lp-gradient-text">thành công</span>
-            </h2>
-            <p className="lp-body-lg lp-mx-auto lp-max-w-md lp-mt-2">
-              Chọn khóa học phù hợp với trình độ và mục tiêu của bạn
-            </p>
-          </div>
-
-          <div className="lp-courses-grid">
-            {courses.map((course, i) => (
-              <div key={i} className="lp-course-card">
-                <div className="lp-course-thumb">
-                  <div
-                    className="lp-course-thumb-bg"
-                    style={{ background: course.gradient }}
-                  >
-                    <span className="lp-course-thumb-badge">{course.level}</span>
-                  </div>
-                </div>
-                <div className="lp-course-body">
-                  <h3 className="lp-course-title">{course.title}</h3>
-                  <div className="lp-course-meta">
-                    <span className="lp-course-meta-item">
-                      <BookOpen size={14} /> {course.lessons} bài học
-                    </span>
-                    <span className="lp-course-meta-item">
-                      <Clock size={14} /> {course.duration}
-                    </span>
-                    <span className="lp-course-meta-item">
-                      <BarChart3 size={14} /> {course.level}
-                    </span>
-                  </div>
-                  <a href="#" className="lp-course-cta">
-                    Xem chi tiết <ArrowRight size={16} />
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ============================================
-           Learning Roadmap / Timeline
-           ============================================ */}
-      <section className="lp-section lp-roadmap" id="roadmap">
+      <section className="lp-section lp-roadmap" id="courses">
         <div className="lp-container lp-reveal">
           <div className="lp-text-center lp-mb-6">
             <p className="lp-caption">Lộ trình học</p>
             <h2 className="lp-heading-lg lp-mt-2">
-              Con đường đến <span className="lp-gradient-text">thành công</span>
+              Bản Đồ Thành Công Trên <span className="lp-gradient-text">YouTube</span>
             </h2>
             <p className="lp-body-lg lp-mx-auto lp-max-w-md lp-mt-2">
-              Chỉ 4 bước từ người mới bắt đầu đến nhà sáng tạo chuyên nghiệp
+              Dũng vẽ sẵn — bạn chỉ việc đi theo
             </p>
           </div>
 
-          {/* Horizontal Timeline */}
-          <div className="lp-timeline">
+          {/* Roadmap Cards */}
+          <div className="lp-roadmap-cards">
             {roadmapSteps.map((step, i) => (
-              <div key={i} className="lp-timeline-step-wrap">
-                <div className="lp-timeline-step">
-                  <div className="lp-timeline-icon">
+              <div key={i} className="lp-roadmap-card" style={{ '--border-color': step.borderColor } as React.CSSProperties}>
+                <div className="lp-roadmap-card-header">
+                  <div className="lp-roadmap-card-icon" style={{ color: step.borderColor }}>
                     {step.icon}
                   </div>
-                  <div className="lp-timeline-number">Bước {i + 1}</div>
-                  <h4 className="lp-timeline-title">{step.title}</h4>
-                  <p className="lp-timeline-desc">{step.desc}</p>
+                  <div className="lp-roadmap-card-badge" style={{ color: step.borderColor }}>{step.subtitle}</div>
                 </div>
-                {/* Connector or spacer for equal width */}
-                {i < roadmapSteps.length - 1 ? (
-                  <div className="lp-timeline-connector">
-                    <div className="lp-timeline-line" />
-                    <div className="lp-timeline-arrow">
-                      <ArrowRight size={16} />
-                    </div>
+                <h3 className="lp-roadmap-card-title">{step.title}</h3>
+                <p className="lp-roadmap-card-desc">{step.desc}</p>
+                <ul className="lp-roadmap-card-features">
+                  {step.features.map((f, fi) => (
+                    <li key={fi}><CheckCircle size={16} color={step.borderColor} /> {f}</li>
+                  ))}
+                </ul>
+                <div className="lp-roadmap-card-footer">
+                  {step.isCurrent ? (
+                    <button className="lp-roadmap-btn-current">Bạn đang ở đây</button>
+                  ) : (
+                    <button className="lp-roadmap-btn-view" style={{ backgroundColor: step.borderColor, borderColor: step.borderColor }}>Xem {step.title.replace('Youtube ', '')} — {step.price}</button>
+                  )}
+                </div>
+                {/* Connector arrow */}
+                {i < roadmapSteps.length - 1 && (
+                  <div className="lp-roadmap-card-arrow" style={{ color: step.borderColor }}>
+                    <ArrowRight size={24} />
                   </div>
-                ) : (
-                  <div className="lp-timeline-spacer" />
                 )}
               </div>
             ))}
@@ -589,7 +532,7 @@ const Landing: React.FC = () => {
           <div className="lp-text-center lp-mb-6">
             <p className="lp-caption">Kết quả đạt được</p>
             <h2 className="lp-heading-lg lp-mt-2">
-              Bạn sẽ đạt được <span className="lp-gradient-text">gì</span>?
+              Bạn sẽ đạt được gì?
             </h2>
             <p className="lp-body-lg lp-mx-auto lp-max-w-md lp-mt-2">
               Những thành quả sau khi hoàn thành khóa học
@@ -620,7 +563,7 @@ const Landing: React.FC = () => {
           <div className="lp-text-center lp-mb-6">
             <p className="lp-caption">Học viên nói gì?</p>
             <h2 className="lp-heading-lg lp-mt-2">
-              Câu chuyện <span className="lp-gradient-text">thành công</span>
+              Câu chuyện thành công
             </h2>
             <p className="lp-body-lg lp-mx-auto lp-max-w-md lp-mt-2">
               Hàng trăm học viên đã thay đổi cuộc sống nhờ YouTube
@@ -703,7 +646,7 @@ const Landing: React.FC = () => {
           <div className="lp-text-center lp-mb-6">
             <p className="lp-caption">Đầu tư cho bản thân</p>
             <h2 className="lp-heading-lg lp-mt-2">
-              Một mức giá <span className="lp-gradient-text">duy nhất</span>
+              Một mức giá duy nhất
             </h2>
             <p className="lp-body-lg lp-mx-auto lp-max-w-md lp-mt-2">
               Sở hữu trọn bộ kiến thức YouTube từ cơ bản đến nâng cao
@@ -763,7 +706,6 @@ const Landing: React.FC = () => {
       <section className="lp-section lp-faq" id="faq">
         <div className="lp-container lp-reveal">
           <div className="lp-text-center lp-mb-6">
-            <p className="lp-caption">FAQ</p>
             <h2 className="lp-heading-lg lp-mt-2">
               Câu hỏi <span className="lp-gradient-text">thường gặp</span>
             </h2>

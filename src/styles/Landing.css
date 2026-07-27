@@ -71,7 +71,7 @@
 
 .lp-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 var(--lp-space-3);
 }
@@ -139,18 +139,15 @@
 }
 
 .lp-caption {
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--lp-text-gray);
+  color: var(--lp-primary);
 }
 
 .lp-gradient-text {
-  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary) / 0.7), hsl(var(--primary)));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #ffffff;
 }
 
 .lp-accent-text {
@@ -660,8 +657,8 @@
 }
 
 .lp-float-card--2 {
-  bottom: 22%;
-  left: 5%;
+  top: 73%;
+  left: 51%;
   animation-delay: 1.3s;
 }
 
@@ -1242,6 +1239,147 @@
   padding: 2px;
 }
 
+/* ============================================
+   Roadmap Cards (Bản Đồ Thành Công)
+   ============================================ */
+.lp-roadmap-cards {
+  display: flex;
+  gap: var(--lp-space-4);
+  align-items: stretch;
+}
+
+.lp-roadmap-card {
+  flex: 1 1 0;
+  min-width: 280px;
+  background: var(--lp-card);
+  border: 1px solid var(--border-color, hsl(var(--primary) / 0.15));
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.lp-roadmap-card:hover {
+  box-shadow: 0 4px 24px var(--border-color, hsl(var(--primary) / 0.25));
+  transform: translateY(-4px);
+}
+
+.lp-roadmap-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--lp-space-2);
+  margin-bottom: var(--lp-space-2);
+}
+
+.lp-roadmap-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--lp-radius-md);
+  background: color-mix(in srgb, var(--border-color) 12%, transparent);
+  flex-shrink: 0;
+}
+
+.lp-roadmap-card-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.lp-roadmap-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: var(--lp-space-1);
+  text-align: center;
+}
+
+.lp-roadmap-card-desc {
+  font-size: 0.85rem;
+  color: var(--lp-text-gray);
+  line-height: 1.55;
+  margin-bottom: var(--lp-space-2);
+  text-align: center;
+}
+
+.lp-roadmap-card-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: var(--lp-space-3);
+  flex: 1;
+}
+
+.lp-roadmap-card-features li {
+  font-size: 0.82rem;
+  color: var(--lp-text-gray);
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  line-height: 1.45;
+  text-wrap: pretty;
+}
+
+.lp-roadmap-card-footer {
+  padding-top: var(--lp-space-2);
+  border-top: 1px solid var(--lp-border);
+  text-align: center;
+}
+
+.lp-roadmap-btn-current {
+  width: 100%;
+  padding: 10px 16px;
+  background: hsl(var(--primary) / 0.15);
+  color: var(--lp-primary);
+  border: none;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: default;
+}
+
+.lp-roadmap-btn-view {
+  width: 100%;
+  padding: 10px 16px;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.lp-roadmap-btn-view:hover {
+  opacity: 0.85;
+}
+
+.lp-roadmap-card-arrow {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: hsl(var(--primary) / 0.4);
+  z-index: 2;
+}
+
+@media (max-width: 1024px) {
+  .lp-roadmap-cards {
+    flex-direction: column;
+  }
+
+  .lp-roadmap-card-arrow {
+    display: none;
+  }
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .lp-timeline {
@@ -1615,16 +1753,17 @@
 .lp-pricing-badge {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 8px 20px;
-  background: hsl(var(--primary) / 0.12);
-  border: 1px solid hsl(var(--primary) / 0.25);
+  gap: 8px;
+  padding: 10px 24px;
+  background: hsl(var(--primary) / 0.35);
+  border: 2px solid hsl(var(--primary) / 0.7);
   border-radius: var(--lp-radius-full);
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--lp-primary);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
   margin-bottom: var(--lp-space-3);
-  animation: lp-glow-pulse 3s ease-in-out infinite;
+  letter-spacing: 0.02em;
+  box-shadow: 0 0 24px hsl(var(--primary) / 0.35);
 }
 
 /* Course name */
